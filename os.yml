@@ -1,0 +1,12 @@
+---
+  - name: "Playing with Ansible."
+# Ansible Playbook will run on the Localhost where AWX is installed
+    hosts: localhost
+    connection: local
+    tasks:
+# Below task will give the output of current os detauls
+    - name: "finding out OS"
+      shell: "cat /etc/os-release"
+      register: "output"
+# The Output of the above task will be displayed on the Screen
+    - debug: var=output
