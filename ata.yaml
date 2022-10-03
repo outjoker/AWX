@@ -1,6 +1,6 @@
 ---
   - name: "Playing with Ansible."
-# Ansible Playbook will run on the Localhost where AWX is installed.
+# Ansible Playbook will run on the Localhost where AWX is installed...
     hosts: localhost
     connection: local
     tasks:
